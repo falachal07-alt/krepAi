@@ -1,0 +1,59 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krep Ai | AI Humanizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-wrapper">
+        <nav class="navbar">
+            <div class="logo">Krep Ai<span>.</span></div>
+            <div class="badge">Humanizer Pro</div>
+        </nav>
+
+        <main class="content">
+            <header class="hero">
+                <h1>Ubah Teks AI Menjadi <span>Manusiawi</span></h1>
+                <p>Krep membantu Anda melakukan parafrase agar tulisan lebih natural dan lolos deteksi AI.</p>
+            </header>
+
+            <section class="editor-container">
+                <div class="panel">
+                    <div class="panel-header">
+                        <span>Input Teks</span>
+                        <span id="charCount" class="counter">0 Karakter</span>
+                    </div>
+                    <textarea id="inputText" placeholder="Tulis atau tempel teks di sini..."></textarea>
+                </div>
+
+                <div class="panel">
+                    <div class="panel-header">
+                        <span>Hasil Krep</span>
+                        <button id="copyBtn" class="btn-icon">Salin</button>
+                    </div>
+                    <div id="outputText" class="output-box" data-placeholder="Hasil parafrase akan muncul di sini..."></div>
+                </div>
+            </section>
+
+            <footer class="controls">
+                <div class="setting-group">
+                    <label>Gaya Bahasa:</label>
+                    <select id="styleSelect">
+                        <option value="natural dan mengalir">Natural</option>
+                        <option value="formal dan akademik">Akademik</option>
+                        <option value="santai dan akrab">Casual</option>
+                        <option value="profesional bisnis">Bisnis</option>
+                    </select>
+                </div>
+                <button id="processBtn" class="btn-main">Mulai Proses</button>
+            </footer>
+            
+            <div id="msgBox" class="message-box"></div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
